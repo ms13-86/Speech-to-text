@@ -1,0 +1,43 @@
+DS Transcript for 3' chuck1:
+loanable praetorians bauermeister trachonitis workroom i must oninterestin tahoontowhee i bother i fortunately my manipulation he heretofore
+ i have ayuntamiento for five laboriously father tradition i aeronautical confusion homoeopathic opposite yeomanry atrabilarious onguiaahra 
+heliogabalus amiability hooloomooloo he abolished onabasha you gooroomahashoy housatonic yookoohoo of hootooala a permeator infatuation and the 
+mother who amattafoa share of the fomorians to him you would not have seymour i won'avanother ambulinia a hibachi unamiable imagine the bumboat
+Inference took 210.576s for 180.000s audio file.
+
+From Google API:
+financing so I non equity financing so not giving up mistake of their business they just want someone to lend him some money to expand their business 
+and where is the problem the problem is currently write in this country if you are in a situation is actually very very hard to get a loan unless you're 
+willing to accept a race a fixed rate for a fixed number of years for a specific one-off project you get finance if you have a complex business if you want 
+to do multiple things at the same time or generally going to High Street branch and I'll give you a kind of vanilla type of loan and you take it or leave
+ it it's saying we believe there's actually an underserved market so maybe I was wrong they were challenging we believe that the market is not getting access 
+to debt financing and we want to be the company is an access to that financing popular restaurants and you need to have prime location siteslet's say three 
+properties become available at the same time all of the great location to happy open in all three if you go to a high street bank I generally say will give 
+you money for one make that one profitable and then we'll give you money to go to so you won't you won't be allowed to have a credit line open 3 at the same 
+time or if you've got a month to get the money to do that loan is going to take you actually for 6-months to get the money in the first place so the timing will 
+break for you as well as a checklist type processor how you get that's no problem I'm describing for you and the reason why that problem was created and apologise
+ I'm sure you're aware of this is in the late 90s banks globally it wasn't a UK phenomenon thanks so we decided to remove bank managers so you had an experienced 
+person and every community in the branch renew their community saying you if you were good business person or they know if you're an alcoholic or a gambler and 
+someoneand I made a local learning decision so it wasn't based on a central system and century device criteria was based on local knowledge is often a graduate 
+because they don't actually do anything other than managers staff and refer customers to experts who managed from central teams came from and describing is here 
+the middle bracket here so I'll talk to you through the differences in the three types of SME lending you speak to you pronounce attentive what does SME lending
+ meanadd a top end you got the smaller loans and microlending that's generally less than 100g let so probably more like 50 grand you can go and get a loan in
+5-minutes as a business these days you can go to Esmee iwalker easybulb in the US have got cabbage on Deck there's lots of different way"
+
+
+
+DS Transcript for 3' chuck2:
+honoria by few i want to perform for literary monomaniac wagonettes and monotonous good ionian collaboration ayala and i alone traitorous to ostentation 
+but the mother montefiascone but babylon by my mariannakookas warburton above the turmoil whooooooosh roboticists oeconomy houtrageous atheromatous surefooted 
+mashauasha relation for i moralise have a blooming on a horse in her but who was to her mahamahopadhaya hanahouua why would the shillitoe alone chaiselongue 
+minamoto antoinette etiennette tehooladeree huanacocha aeronautical gooroomahashoy without a rigour than i for prisoner callahan to you other chanaanitish 
+infatuation itacoatiara on my fiftieth washrooms on
+Inference took 211.167s for 180.000s audio file.
+
+
+From Google API:
+access to microlending there were a few checks and Company House make sure you're real you registered your you with financial records etc and then I'll lend you 
+£50 in your bank account 5-minutes later unsecured loan what happens when we talking let's 100000000 cyclone plus you go to the Investment bank they fly in 20 expensive graduates from New York 
+they go through your all of your plans and I'll give you a loan and they charge you 5% for that financing to justify their salaries and make sure everyone gets a nice bonus at the end of the year that middle level unfortunately the business is as complex as the big loanbut the loan isn't big enough to justify a bunch of people to fly in from the vets and bank so that's why I'm saying it's underserved and at the moment we believe we are globally the only player in the space who is give complex loans to the more medium-sized businesses who want structured financing it's structured loans have different loan payment schedules and things change but they want the same kind of rates they get the micro lending site so there's a massive gap there so that's why I'm talking to you about today the underserved middle type of smes so what do we do if you think about what you need to give that loan you need to things the first side is on the borrower site the information from the boiler to work out how that business is doing so the first thing we do is with a platform we say you send us your financial records in any format you want so you want to send us a PDF slightly faded 30 degree angle tilted we will consume that data with machine vision experts hence the algorithm second look at financial and that's the the comparables that the market data side of it so we have a team of data scientist to look at sourcing local data if you remember what I said the start is a local businesses and not big multi successful local businesses so you need sector and region-specific data to then compare that borrower to do the comparables so if they are a chain of restaurants how much are they making her order how much they making for that type of cuisine how much are getting football compared to other people within that postcode very very localised data scientist the data for us and Engineers who wrote The algorithms to automatically create the insights for us so if he machine machine machine vision experts
+​
+
