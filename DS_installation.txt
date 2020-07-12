@@ -177,4 +177,4 @@ Loaded scorer in 0.000197s.
 Running inference.
 honoria by few i want to perform for literary monomaniac wagonettes and monotonous good ionian collaboration ayala and i alone traitorous to ostentation but the mother montefiascone but babylon by my mariannakookas warburton above the turmoil whooooooosh roboticists oeconomy houtrageous atheromatous surefooted mashauasha relation for i moralise have a blooming on a horse in her but who was to her mahamahopadhaya hanahouua why would the shillitoe alone chaiselongue minamoto antoinette etiennette tehooladeree huanacocha aeronautical gooroomahashoy without a rigour than i for prisoner callahan to you other chanaanitish infatuation itacoatiara on my fiftieth washrooms on
 Inference took 211.167s for 180.000s audio file.
-jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ 
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ change this to deepspeech0.6
