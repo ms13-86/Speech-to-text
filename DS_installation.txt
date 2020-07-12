@@ -71,26 +71,7 @@ Loaded scorer in 0.000186s.
 Running inference.
 experience proves this
 Inference took 1.237s for 1.975s audio file.
-jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_test_5min.mp3
-Loading model from file deepspeech-0.7.4-models.pbmm
-TensorFlow: v1.15.0-24-gceb46aa
-DeepSpeech: v0.7.4-0-gfcd9563
-2020-06-25 09:41:31.970000: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-Loaded model in 0.0106s.
-Loading scorer from files deepspeech-0.7.4-models.scorer
-Loaded scorer in 0.000175s.
-Traceback (most recent call last):
-  File "/opt/conda/bin/deepspeech", line 8, in <module>
-    sys.exit(main())
-  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 137, in main
-    fin = wave.open(args.audio, 'rb')
-  File "/opt/conda/lib/python3.7/wave.py", line 510, in open
-    return Wave_read(f)
-  File "/opt/conda/lib/python3.7/wave.py", line 164, in __init__
-    self.initfp(f)
-  File "/opt/conda/lib/python3.7/wave.py", line 131, in initfp
-    raise Error('file does not start with RIFF id')
-wave.Error: file does not start with RIFF id
+
 jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_test_5min.wav
 Loading model from file deepspeech-0.7.4-models.pbmm
 TensorFlow: v1.15.0-24-gceb46aa
