@@ -9,29 +9,6 @@ remote: Compressing objects: 100% (15/15), done.
 remote: Total 19211 (delta 8), reused 13 (delta 5), pack-reused 19187
 Receiving objects: 100% (19211/19211), 47.86 MiB | 8.61 MiB/s, done.
 Resolving deltas: 100% (13122/13122), done.
-jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten$ wget -O — https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz | tar xvfz -
---2020-06-25 09:25:16--  https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz
-Resolving github.com (github.com)... 140.82.118.4
-Connecting to github.com (github.com)|140.82.118.4|:443... connected.
-HTTP request sent, awaiting response... 404 Not Found
-2020-06-25 09:25:17 ERROR 404: Not Found.
-
-
-gzip: stdin: unexpected end of file
-tar: Child returned status 1
-tar: Error is not recoverable: exiting now
-jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten$ cd DeepSpeech
-jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ wget -O — https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz | tar xvfz -
---2020-06-25 09:28:58--  https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz
-Resolving github.com (github.com)... 140.82.118.3
-Connecting to github.com (github.com)|140.82.118.3|:443... connected.
-HTTP request sent, awaiting response... 404 Not Found
-2020-06-25 09:28:59 ERROR 404: Not Found.
-
-
-gzip: stdin: unexpected end of file
-tar: Child returned status 1
-tar: Error is not recoverable: exiting now
 jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0.7.4-models.pbmm
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
