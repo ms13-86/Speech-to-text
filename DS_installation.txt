@@ -1,0 +1,222 @@
+jupyter@tensorflow-20200514-ms1:~$ ls
+2020_project_benzaiten  deepspeech_transcription  tutorials
+jupyter@tensorflow-20200514-ms1:~$ cd 2020_project_benzaiten
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten$ git clone https://github.com/mozilla/DeepSpeech
+Cloning into 'DeepSpeech'...
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 19211 (delta 8), reused 13 (delta 5), pack-reused 19187
+Receiving objects: 100% (19211/19211), 47.86 MiB | 8.61 MiB/s, done.
+Resolving deltas: 100% (13122/13122), done.
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten$ wget -O — https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz | tar xvfz -
+--2020-06-25 09:25:16--  https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz
+Resolving github.com (github.com)... 140.82.118.4
+Connecting to github.com (github.com)|140.82.118.4|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2020-06-25 09:25:17 ERROR 404: Not Found.
+
+
+gzip: stdin: unexpected end of file
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten$ cd DeepSpeech
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ wget -O — https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz | tar xvfz -
+--2020-06-25 09:28:58--  https://github.com/mozilla/DeepSpeech/releases/download/v0.3.0-models.tar.gz
+Resolving github.com (github.com)... 140.82.118.3
+Connecting to github.com (github.com)|140.82.118.3|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2020-06-25 09:28:59 ERROR 404: Not Found.
+
+
+gzip: stdin: unexpected end of file
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0.7.4-models.pbmm
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   639  100   639    0     0   2852      0 --:--:-- --:--:-- --:--:--  2840
+100  180M  100  180M    0     0  1164k      0  0:02:38  0:02:38 --:--:-- 4932k
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0.7.4-models.scorer
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   641  100   641    0     0   1656      0 --:--:-- --:--:-- --:--:--  1652
+100  909M  100  909M    0     0  12.5M      0  0:01:12  0:01:12 --:--:-- 9900k
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/audio-0.7.4.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   629  100   629    0     0   1214      0 --:--:-- --:--:-- --:--:--  1216
+100  193k  100  193k    0     0   154k      0  0:00:01  0:00:01 --:--:--  415k
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ tar xvf audio-0.7.4.tar.gz
+._audio
+audio/
+audio/._2830-3980-0043.wav
+audio/2830-3980-0043.wav
+audio/._Attribution.txt
+audio/Attribution.txt
+audio/._4507-16021-0012.wav
+audio/4507-16021-0012.wav
+audio/._8455-210777-0068.wav
+audio/8455-210777-0068.wav
+audio/._License.txt
+audio/License.txt
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/2830-3980-0043.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 09:38:22.437326: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0109s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000186s.
+Running inference.
+experience proves this
+Inference took 1.237s for 1.975s audio file.
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_test_5min.mp3
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 09:41:31.970000: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0106s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000175s.
+Traceback (most recent call last):
+  File "/opt/conda/bin/deepspeech", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 137, in main
+    fin = wave.open(args.audio, 'rb')
+  File "/opt/conda/lib/python3.7/wave.py", line 510, in open
+    return Wave_read(f)
+  File "/opt/conda/lib/python3.7/wave.py", line 164, in __init__
+    self.initfp(f)
+  File "/opt/conda/lib/python3.7/wave.py", line 131, in initfp
+    raise Error('file does not start with RIFF id')
+wave.Error: file does not start with RIFF id
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_test_5min.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 09:56:42.806872: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0105s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000194s.
+Traceback (most recent call last):
+  File "/opt/conda/bin/deepspeech", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 137, in main
+    fin = wave.open(args.audio, 'rb')
+  File "/opt/conda/lib/python3.7/wave.py", line 510, in open
+    return Wave_read(f)
+  File "/opt/conda/lib/python3.7/wave.py", line 160, in __init__
+    f = builtins.open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'audio/ranil_test_5min.wav'
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_test_5min.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 09:58:17.024815: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0113s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000191s.
+Warning: original sample rate (44100) is different than 16000hz. Resampling might produce erratic speech recognition.
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 25, in convert_samplerate
+    output = subprocess.check_output(shlex.split(sox_cmd), stderr=subprocess.PIPE)
+  File "/opt/conda/lib/python3.7/subprocess.py", line 411, in check_output
+    **kwargs).stdout
+  File "/opt/conda/lib/python3.7/subprocess.py", line 488, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/opt/conda/lib/python3.7/subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "/opt/conda/lib/python3.7/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'sox': 'sox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/bin/deepspeech", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 141, in main
+    fs_new, audio = convert_samplerate(args.audio, desired_sample_rate)
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 29, in convert_samplerate
+    raise OSError(e.errno, 'SoX not found, use {}hz files or install it: {}'.format(desired_sample_rate, e.strerror))
+FileNotFoundError: [Errno 2] SoX not found, use 16000hz files or install it: No such file or directory: 'sox'
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ py -m venv venv
+bash: py: command not found
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/8455-210777-0068.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 10:30:43.949840: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0109s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000188s.
+Running inference.
+your power is sufficient i said
+Inference took 1.615s for 2.590s audio file.
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_ds_check.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 10:36:03.720360: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0108s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000209s.
+Warning: original sample rate (44100) is different than 16000hz. Resampling might produce erratic speech recognition.
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 25, in convert_samplerate
+    output = subprocess.check_output(shlex.split(sox_cmd), stderr=subprocess.PIPE)
+  File "/opt/conda/lib/python3.7/subprocess.py", line 411, in check_output
+    **kwargs).stdout
+  File "/opt/conda/lib/python3.7/subprocess.py", line 488, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/opt/conda/lib/python3.7/subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "/opt/conda/lib/python3.7/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'sox': 'sox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/bin/deepspeech", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 141, in main
+    fs_new, audio = convert_samplerate(args.audio, desired_sample_rate)
+  File "/opt/conda/lib/python3.7/site-packages/deepspeech/client.py", line 29, in convert_samplerate
+    raise OSError(e.errno, 'SoX not found, use {}hz files or install it: {}'.format(desired_sample_rate, e.strerror))
+FileNotFoundError: [Errno 2] SoX not found, use 16000hz files or install it: No such file or directory: 'sox'
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_ds_check.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 10:42:03.304179: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.011s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000191s.
+Running inference.
+oh i kohaokalani had a hold over aerodrome my promotion bushwoman caonabo troisetoiles tractoration haverford woerishofer the potawatomi antithetical henceforth in how he approached a hereafter the fomorian ferronniere
+Inference took 70.368s for 60.000s audio file.
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_ds_chunk1.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 11:03:10.268769: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0105s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000184s.
+Running inference.
+loanable praetorians bauermeister trachonitis workroom i must oninterestin tahoontowhee i bother i fortunately my manipulation he heretofore i have ayuntamiento for five laboriously father tradition i aeronautical confusion homoeopathic opposite yeomanry atrabilarious onguiaahra heliogabalus amiability hooloomooloo he abolished onabasha you gooroomahashoy housatonic yookoohoo of hootooala a permeator infatuation and the mother who amattafoa share of the fomorians to him you would not have seymour i won'avanother ambulinia a hibachi unamiable imagine the bumboat
+Inference took 210.576s for 180.000s audio file.
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ deepspeech --model deepspeech-0.7.4-models.pbmm --scorer deepspeech-0.7.4-models.scorer --audio audio/ranil_ds_chunk2.wav
+Loading model from file deepspeech-0.7.4-models.pbmm
+TensorFlow: v1.15.0-24-gceb46aa
+DeepSpeech: v0.7.4-0-gfcd9563
+2020-06-25 11:09:24.100330: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Loaded model in 0.0113s.
+Loading scorer from files deepspeech-0.7.4-models.scorer
+Loaded scorer in 0.000197s.
+Running inference.
+honoria by few i want to perform for literary monomaniac wagonettes and monotonous good ionian collaboration ayala and i alone traitorous to ostentation but the mother montefiascone but babylon by my mariannakookas warburton above the turmoil whooooooosh roboticists oeconomy houtrageous atheromatous surefooted mashauasha relation for i moralise have a blooming on a horse in her but who was to her mahamahopadhaya hanahouua why would the shillitoe alone chaiselongue minamoto antoinette etiennette tehooladeree huanacocha aeronautical gooroomahashoy without a rigour than i for prisoner callahan to you other chanaanitish infatuation itacoatiara on my fiftieth washrooms on
+Inference took 211.167s for 180.000s audio file.
+jupyter@tensorflow-20200514-ms1:~/2020_project_benzaiten/DeepSpeech$ 
